@@ -13,6 +13,8 @@ Api para el registro digital de documentos
 
 ## Levantar la aplicación
 
+Tienes dos opciones para levantar el proyecto:
+
 ### 1. Ejecución local
 
 1. **Clona el repositorio**:
@@ -57,7 +59,7 @@ Api para el registro digital de documentos
    ```
 
 
-## 📖 Swagger / OpenAPI
+## Swagger / OpenAPI
 
 Una vez en ejecución, accede a:
 
