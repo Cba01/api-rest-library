@@ -31,7 +31,7 @@ Tienes dos opciones para levantar el proyecto:
      - library_documents.sql
      - library_indexentries.sql
 
-3. **Configura variables de entorno**:
+3. **Configura conexion a base de datos**:
    
    Edita `appsettings.json` con tu conexión a BD y otros ajustes:
 
@@ -52,11 +52,22 @@ Tienes dos opciones para levantar el proyecto:
 ### 2. Ejecución con Docker
 
 1. Asegúrate de tener Docker instalado.
-2. **Construir la imagen y Ejecutar el contenedor**:
+   
+2. **Configura conexion a base de datos**:
+   
+   Edita `appsettings.json` con tu conexión a BD y otros ajustes:
+
+   ```dotenv
+   "ConnectionStrings": {
+      "Connection"="server=host.docker.internal;port=...;user=...;password=...;database=..."
+   }
+   ```
+3. **Construir la imagen y Ejecutar el contenedor**:
 
    ```bash
    docker build -t mi-api .; docker run -d -p 5065:80 -e ASPNETCORE_URLS='http://+:80' -e ASPNETCORE_ENVIRONMENT='Development' --name mi-api-container mi-api
    ```
+
 
 
 ## Swagger / OpenAPI
