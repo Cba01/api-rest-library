@@ -82,3 +82,22 @@ para ver y probar todos los endpoints.
 
 ---
 
+## Documentación de la API de Documentos
+
+### Endpoints
+
+| Método | Ruta                                    | Descripción                                        |
+|:------:|:----------------------------------------|:---------------------------------------------------|
+| GET    | `/api/documents/{id}`                  | Obtener un documento por su ID (incluye índice).   |
+| GET    | `/api/documents`                       | Buscar documentos con filtros y paginación.        |
+| POST   | `/api/documents`                       | Crear un nuevo documento con sus entradas de índice. |
+| PUT    | `/api/documents/{id}`                  | Reemplazar completamente un documento existente.   |
+| DELETE | `/api/documents/{id}`                  | Eliminar (soft-delete) un documento y sus índices. |
+
+---
+
+### Ejemplo: obtener documento por ID
+
+```http
+GET http://localhost:5065/api/documents/1
+
