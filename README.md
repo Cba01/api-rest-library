@@ -26,8 +26,8 @@ Api para el registro digital de documentos
 
    * Dentro de la carpeta `db/scripts` encontrarás los archivos `.sql` necesarios para crear y poblar la base de datos.
    * Ejecuta esos scripts manualmente en tu gestor de base de datos (SQL Server / MySQL) antes de iniciar la API, en este orden:
-     1.- library_documents.sql
-     2.- library_indexentries.sql
+     ** library_documents.sql
+     ** library_indexentries.sql
 
 3. **Configura variables de entorno**:
    
@@ -46,13 +46,6 @@ Api para el registro digital de documentos
    dotnet build
    dotnet run
    ```
-
-La API estará en:
-
-```
-https://localhost:5001
-http://localhost:5000
-```
 
 ### 2. Ejecución con Docker
 
